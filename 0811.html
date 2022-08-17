@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+    <style>
+        @import url("ttps://fonts.googleapis.com/css?family=Noto+Sans+TC &display=swap&subset=chinese-traditional");
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: "noto Sans TC", sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #546377;
+        }
+
+        .side-menu {
+            width: 300px;
+            height: 100%;
+            padding: 50px 0;
+            box-sizing: border-box;
+            background-image: linear-gradient(0deg, #3381b0, #c2196c);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-menu form {
+            display: flex;
+            margin: 0 10px 50px;
+            border-radius: 100px;
+            border: 1px solid #fff;
+        }
+
+        .side-menu input,
+        .side-menu button {
+            border: none;
+            padding: 5px 10px;
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .side-menu input:focus,
+        .side-menu button:focus {
+            outline: none;
+        }
+
+        .side-menu input {
+            width: 240px;
+        }
+
+        .side-menu button {
+            width: 50px;
+        }
+
+        .nav a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            font-family: "noto Sans TC", sans-serif;
+        }
+
+        .nav a:hover {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            font-family: "noto Sans TC", sans-serif;
+        }
+
+        .nav li {
+            position: relative;
+        }
+
+        .nav li+li a::before {
+            content: "";
+            position: absolute;
+            border-top: 1px solid #fff;
+            left: 10px;
+            right: 10px;
+            top: 0;
+        }
+
+        .nav a .fa {
+            margin-right: -1.1em;
+            transform: scale(0);
+            transition: 0.3s;
+        }
+
+        .nav li:hover .fa {
+            margin-right: 0em;
+            transform: scale(1);
+            color: #fff;
+        }
+
+        .nav li:hover>a {
+            background-color: #030;
+            ;
+        }
+
+        .nav ul {
+            display: none;
+            position: absolute;
+            left: 100%;
+            width: 300px;
+            background: #000;
+            top: 10px;
+        }
+
+        .nav li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="side-menu">
+        <form action="">
+            <input type="search" />
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <ul class="nav">
+            <li>
+                <a href="">
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    出貨單</a>
+                <ul>
+                    <li>
+                        <a href="">
+                            國外出貨單</a>
+                        <ul>
+                            <li><a href="">DAY1</a></li>
+                            <li><a href="">DAY2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            國內出貨單</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            東南亞出貨單</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            特殊出貨單</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-shield" aria-hidden="true"></i>
+                    進貨單</a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                    生產一覽表</a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-asterisk" aria-hidden="true"></i>
+                    沖帳表</a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-taxi" aria-hidden="true"></i>
+                    支出單</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
